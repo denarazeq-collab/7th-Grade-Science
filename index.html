@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7th Grade Science - Mrs. Razeq | Aqsa School</title>
+    <style>
+        :root {
+            --primary-color: #2e6a4f; /* Classic school green / science theme */
+            --secondary-color: #f4f6f8;
+            --text-color: #333333;
+            --accent-color: #d97706;
+            --border-color: #e5e7eb;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #fafafa;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #ffffff;
+            border-bottom: 1px solid var(--border-color);
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--primary-color);
+        }
+
+        /* Header / Hero */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 10px 0 0 0;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Main Content Blocks */
+        main section {
+            background: white;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        /* Call to Action Buttons */
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+            transition: background-color 0.2s;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background-color: #1e4633;
+        }
+
+        .btn-secondary {
+            background-color: #4b5563;
+        }
+
+        .btn-secondary:hover {
+            background-color: #374151;
+        }
+
+        /* Alert/Notice Box */
+        .notice-box {
+            background-color: #fef3c7;
+            border-left: 4px solid var(--accent-color);
+            padding: 15px;
+            border-radius: 0 4px 4px 0;
+            margin-bottom: 25px;
+        }
+
+        /* Sidebar Styles */
+        aside {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .sidebar-card {
+            background: white;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+
+        .sidebar-card h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+
+        /* Lists */
+        ul.resource-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul.resource-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        ul.resource-list li:last-child {
+            border-bottom: none;
+        }
+
+        ul.resource-list a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        ul.resource-list a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1f2937;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #9ca3af;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">Mrs. Razeq's Classroom</a>
+            <ul class="nav-links">
+                <li><a href="#" class="active">7th Science</a></li>
+                <li><a href="#">Expectations</a></li>
+                <li><a href="#">Grading Policies</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Banner -->
+    <header>
+        <h1>7th Grade Science</h1>
+        <p>Aqsa School | School Year 2026-2027</p>
+    </header>
+
+    <!-- Content Area -->
+    <div class="container">
+        
+        <!-- Main Content (Left Column) -->
+        <main>
+            
+            <!-- Weekly Agenda Section -->
+            <section>
+                <h2>Weekly Assignments & Assessments</h2>
+                <div class="notice-box">
+                    <strong>Note:</strong> Check the agenda daily. Future lesson plans are tentative and subject to change based on classroom pace.
+                </div>
+                <p>Click the button below to view our live classroom agenda, homework tracking, and upcoming quiz dates via Planbook.</p>
+                <a href="#" class="btn" target="_blank">View Class Agenda (Planbook)</a>
+            </section>
+
+            <!-- Digital Textbook Section -->
+            <section>
+                <h2>Forgot Your Textbook?</h2>
+                <p>Students can access their digital science portal online at any time to review curriculum chapters and complete assignments.</p>
+                
+                <div style="background-color: var(--secondary-color); padding: 15px; border-radius: 6px; margin: 15px 0; font-size: 0.95rem;">
+                    <strong>Standard Student Login Credentials:</strong><br>
+                    • <strong>Username:</strong> First 12 letters of last name + first initial + last 4 digits of Student ID<br>
+                    • <strong>Password:</strong> First initial + last initial + last 4 digits of Student ID
+                </div>
+                
+                <p><small><em>Tip: Navigate to your specific interactive digital book inside the dashboard to match the exact page numbers listed in the weekly agenda.</em></small></p>
+                <a href="#" class="btn btn-secondary" target="_blank">Login to Savvas Realize / Pearson</a>
+            </section>
+
+            <!-- Current Class Projects -->
+            <section>
+                <h2>What's Happening in the Classroom?</h2>
+                <p>We utilize parent communication portals to share classroom updates, project milestones, and lab photos. Make sure you are signed up to receive notifications.</p>
+                
+                <h3>Upcoming Highlights: 3D Cell Model Project</h3>
+                <p>The rubric, checklist, grading requirements, and photographic examples of past projects are posted directly to our school's learning management system.</p>
+                <a href="mailto:razeq@aqsaschool.org" class="btn">Email Mrs. Razeq</a>
+            </section>
+
+        </main>
+
+        <!-- Sidebar (Right Column) -->
+        <aside>
+            
+            <!-- Quizlet Study Guides -->
+            <div class="sidebar-card">
+                <h3>Study Tools & Quizlets</h3>
+                <ul class="resource-list">
+                    <li><a href="#" target="_blank">🔗 Cells: Organelles & Functions</a></li>
+                    <li><a href="#" target="_blank">🔗 Microscope Parts & Functions</a></li>
+                    <li><a href="#" target="_blank">🔗 Matter & States of Matter</a></li>
+                    <li><a href="#" target="_blank">🔗 Periodic Table Review</a></li>
+                    <li><a href="#" target="_blank">🔗 Atmosphere & Climate Systems</a></li>
+                    <li><a href="#" target="_blank">🔗 Waves & Light Energy</a></li>
+                </ul>
+            </div>
+
+            <!-- Interactive Lab Links -->
+            <div class="sidebar-card">
+                <h3>Virtual Labs & Webquests</h3>
+                <ul class="resource-list">
+                    <li><a href="#" target="_blank">🌐 Interactive Water Cycle</a></li>
+                    <li><a href="#" target="_blank">🌐 Plant & Animal Cell Lab</a></li>
+                    <li><a href="#" target="_blank">🌐 Photosynthesis Simulator</a></li>
+                    <li><a href="#" target="_blank">🌐 Waves Motion Webquest</a></li>
+                    <li><a href="#" target="_blank">🌐 States of Matter Simulator</a></li>
+                </ul>
+            </div>
+
+        </aside>
+
+    </div>
+
+    <!-- Page Footer -->
+    <footer>
+        <p>&copy; 2026-2027 Aqsa School Middle School Science — Mrs. Razeq</p>
+        <p><small>Created for educational purposes. Built mirroring traditional classroom structures.</small></p>
+    </footer>
+
+</body>
+</html>
